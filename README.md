@@ -1,158 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-</head>
-<style>
-    body{
-        margin: 0px auto;
-        padding: 0;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #main_box{
-        height: 575px;
-        width: 350px;
-        /* border: 1px solid black; */
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 3px 5px 6px gray;
-    }
-    #container{
-        height: 390px;
-        width: 350px;
-        /* border: 1px solid black; */
-        /* margin-top: 180px; */
-    }
-    .box{
-        height: 60px;
-        width: 350px;
-        /* border: 1px solid black; */
-        margin-top: 20px;
-    }
-    .opt{
-        height: 60px;
-        width: 60px;
-        font-size: 20px;
-        font-weight: 500;
-        margin-left: 20px;
-        border-radius: 50%;
-        box-shadow: 1px 0px 0px black;
-        background-color: white;
-    }
-    .button{
-        height: 60px;
-        width: 60px;
-        font-size: 20px;
-        font-weight: 500;
-        margin-left: 20px;
-        border-radius: 50%;
-        box-shadow: 1px 0px 0px black;
-        background-color: white;
-    }
-    #button19{
-        width: 130px;
-        border: none;
-        font-size: 28px;
-        border-radius: 0%;
-        margin-left: 25px;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        border-bottom-left-radius: 50px;
-        border-top-left-radius: 50px;
-        background-color: green;
-        border: none;
-        box-shadow: 1px 0px 0px black;
-        color: aliceblue;
-    }
-    #box1{
-        margin-top: 0%;
-    }
+<h1 align="center">Hi 👋, I'm Vaibhavi Vibhute</h1>
+<h3 align="center">Fresher | Web Developer | Technical Analyst | Software Developer | Trainee</h3>
 
-    #inp{
-        height: 180px;
-        width: 350px;
-        /* border: 1px solid black; */
-    }
-    #ans{
-        height: 165px;
-        width: 335px;
-        /* border: 1px solid black; */
-        border-color: rgb(235, 231, 231);
-        background-color: rgb(235, 231, 231);
-        text-align: right;
-        margin-left: 5px;
-        margin-top: 3px;
-        font-size: 25px;
-        /* margin-left: px; */
-        /* margin-top: 2px; */
-    }
-   
-</style>
-<body>
-    <div id="main_box">
-        <div id="inp">
-                <input type="text" id="ans" class="ans1">
-        </div>
-        <div id="container">
-            <div class="box" id="box1">
-                <input type="button" class="button" id="button1" value="C" onclick="clrscr()">
-                <input type="button" class="opt" id="button2" value="+/-">
-                <input type="button" class="button" id="button3" value="DEL" onclick="pressClear()">
-                <input type="button" class="opt" id="button4" value="/" onclick="getvalue('/')">
-            </div>
-            <div class="box" id="box2">
-                <input type="button" class="button" id="button5" value="7" onclick="getvalue('7')">
-                <input type="button" class="button" id="button6" value="8" onclick="getvalue('8')">
-                <input type="button" class="button" id="button7" value="9" onclick="getvalue('9')">
-                <input type="button" class="opt" id="button8" value="*" onclick="getvalue('*')">
-            </div>
-            <div class="box" id="box3">
-                <input type="button" class="button" id="button9" value="4"onclick="getvalue ('4')">
-                <input type="button" class="button" id="button10" value="5"onclick="getvalue('5')">
-                <input type="button" class="button" id="button11" value="6"onclick="getvalue('6')">
-                <input type="button" class="opt" id="button12" value="-" onclick="getvalue('-')">
-            </div>
-            <div class="box" id="box4">
-                <input type="button" class="button" id="button13" value="1" onclick="getvalue('1')">
-                <input type="button" class="button" id="button14" value="2" onclick="getvalue('2')">
-                <input type="button" class="button" id="button15" value="3" onclick="getvalue('3')">
-                <input type="button" class="opt" id="button16" value="+" onclick="getvalue('+')">
-            </div>
-            <div class="box" id="box5">
-                <input type="button" class="button" id="button17" value="0" onclick="getvalue('0')">
-                <input type="button" class="button" id="button18" value="." onclick="getvalue('.')">
-                <input type="button" class="opt" id="button19" value="=" onclick="getresult('=')">
-            </div>
-        </div>
-    </div>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=vb-vs10&label=Profile%20views&color=0e75b6&style=flat" alt="vb-vs10" /> </p>
 
-    <script>
-        function pressClear() {
-  			var str = document.getElementById("ans").value
-            str = str.slice(0,-1);
-            document.getElementById("ans").value = str;
-		}
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=vb-vs10" alt="vb-vs10" /></a> </p>
 
-        function clrscr() {
-            document.getElementById("ans").value=""
-        }
-        function getvalue(val) {
-            document.getElementById("ans").value+=val
-            return val
-        }
-        function getresult() {
-            let x=document.getElementById('ans').value
-            let y=eval(x);
-            document.getElementById('ans').value=y
-            return y;
-        }
-    </script>
-</body>
-</html>
+- 🌱 I’m recently completing **Java full stack development course**
+
+- 👨‍💻 All of my projects are available at [https://vaibhavibvibhute21.wixsite.com/myportfolio](https://vaibhavibvibhute21.wixsite.com/myportfolio)
+
+- 💬 Ask me about **Web Development(HTML,CSS & JS), Java , SQL**
+
+- 📫 How to reach me **vaibhavibvibhute2151@gmail.com**
+
+- 📄 Know about my experiences [https://drive.google.com/file/d/19UMc9_HQrGkMHfsTN_ZEbzBzZ31-Oxhn/view?usp=sharing](https://drive.google.com/file/d/19UMc9_HQrGkMHfsTN_ZEbzBzZ31-Oxhn/view?usp=sharing)
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/https://www.linkedin.com/in/vaibhavi-vibhute10/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/vaibhavi-vibhute10/" height="30" width="40" /></a>
+<a href="https://instagram.com/vaibhavi vibhute" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="vaibhavi vibhute" height="30" width="40" /></a>
+</p>
+
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://spring.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/> </a> </p>
+
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=vb-vs10&show_icons=true&locale=en&layout=compact" alt="vb-vs10" /></p>
+
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=vb-vs10&show_icons=true&locale=en" alt="vb-vs10" /></p>
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=vb-vs10&" alt="vb-vs10" /></p>
