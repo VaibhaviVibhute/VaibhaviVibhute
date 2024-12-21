@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Vaibhavi Vibhute</h1>
+<h1 align="center">Hi 👋, I'm Vaibhavi </h1>
 <h3 align="center">Fresher | Web Developer | Technical Analyst | Software Developer | Trainee</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=vb-vs10&label=Profile%20views&color=0e75b6&style=flat" alt="vb-vs10" /> </p>
